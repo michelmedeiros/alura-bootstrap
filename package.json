@@ -1,0 +1,27 @@
+{
+    "name": "alura-bootstrap",
+    "version": "1.0.0",
+    "description": "rojeto de estudo Bootstrap",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/michelmedeiros/alura-bootstrap.git"
+    },
+    "keywords": [
+        "bootstrap"
+    ],
+    "author": "Michel Medeiros",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/michelmedeiros/alura-bootstrap/issues"
+    },
+    "homepage": "https://github.com/michelmedeiros/alura-bootstrap#readme",
+    "dependencies": {
+        "bootstrap": "^3.3.7",
+        "express": "^4.14.1",
+        "jquery": "^2.2.4"
+    }
+}
