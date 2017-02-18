@@ -11,13 +11,42 @@
 </head>
 
 <body>
-    <section class="container">
+    <header>
+        <nav class="navbar navbar-inverse" id="collapse-navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Casa Fina Imóveis</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#sobre-nos">Sobre Nós</a></li>
+                        <li><a href="#nossos-projetos">Nossos Projetos</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#video">Vídeo</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="casaFina-banner">
+            <h1>Top Casa Fina Imóveis</h1>
+            <p>Sua melhor opção em imóveis</p>
+            <a href="#contato" class="btn btn-lg btn-primary">Contate-nos agora</a>
+        </div>
+    </header>
+    <section class="container" id="sobre-nos">
         <h2 class="titulo">Sobre Nós</h2>
         <div class="row">
-            <div class="col-sm-4 col-md-6">
+            <div class="col-sm-6 col-md-6">
                 <img src="img/empresa.jpg" class="img-responsive text-center">
             </div>
-            <div class="col-sm-4 col-md-6">
+            <div class="col-sm-6 col-md-6">
                 <div id="paineis-sobre" class="panel-group">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -62,10 +91,10 @@
             <p>Mais de 5 milhoes de clientes satisfeitos em todo o mundo.</p>
         </div>
     </div>
-    <section class="container">
+    <section class="container" id="nossos-projetos">
         <h2 class="titulo">Nossos Projetos</h2>
         <div class="row">
-            <div class="col-sm-4 col-md-6">
+            <div class="col-sm-6 col-md-6">
                 <div class="thumbnail">
                     <img src="img/projetos/casa-lago.png" alt="Foto da casa do lago" class="img-responsive text-center">
                     <div class="caption">
@@ -74,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 col-md-6">
+            <div class="col-sm-6 col-md-6">
                 <div class="thumbnail">
                     <img src="img/projetos/residencia-ludi.png" alt="Foto da casa ludi" class="img-responsive text-center">
                     <div class="caption">
@@ -85,7 +114,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4 col-md-6">
+            <div class="col-sm-6 col-md-6">
                 <div class="thumbnail">
                     <img src="img/projetos/mercado-marapira.png" alt="Foto do Mercado Marapira" class="img-responsive text-center">
                     <div class="caption">
@@ -94,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 col-md-6">
+            <div class="col-sm-6 col-md-6">
                 <div class="thumbnail">
                     <img src="img/projetos/palacio-dionisio.png" alt="Foto do Palácio Dionisio" class="img-responsive text-center">
                     <div class="caption">
@@ -105,7 +134,7 @@
             </div>
         </div>
     </section>
-    <section class="container">
+    <section class="container" id="depoimentos">
         <h2 class="titulo">Depoimentos de clientes</h2>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -150,64 +179,59 @@
             </a>
         </div>
     </section>
-    <section class="container">
-        <h2 class="titulo">Vídeos Institucionais</h2>
+    <div class="container" id="video">
         <div class="row">
-            <div class="col-sm-4 col-md-6">
+            <div class="col-sm-6 col-md-6">
+                <h2 class="titulo">Vídeos Institucionais</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe width="568" height="315" src="https://www.youtube.com/embed/pUvcr9JyMuM" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="col-sm-4 col-md-6">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe width="568" height="315" src="https://www.youtube.com/embed/u9dD93mj9U4" frameborder="0" allowfullscreen></iframe>
-                </div>
+            <div class="col-sm-6 col-md-6" id="contato">
+                <h2 class="titulo">Contato</h2>
+                <h3>Entre em contato conosco</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">@</div>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite seu email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="pessoa" id="pf" value="option1" checked> Pessoa Física
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="pessoa" id="pj" value="option2"> Pessoa Jurídica
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <select class="form-control">
+                                <option selected disabled>Tipo de Solicitação</option>
+                                <option>Casa</option>
+                                <option>Apartamento</option>
+                                <option>Mansão</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="help-block"></div>
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </form>
             </div>
         </div>
-    </section>
-    <section class="container">
-        <h2 class="titulo">Contato</h2>
-        <h3>Entre em contato conosco</h3>
-        <form>
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
-            </div>
-            <div class="form-group">
-                <label class="sr-only" for="exampleInputEmail1">Email address</label>
-                <div class="input-group">
-                    <div class="input-group-addon">@</div>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite seu email">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="pessoa" id="pf" value="option1" checked> Pessoa Física
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="pessoa" id="pj" value="option2"> Pessoa Jurídica
-                        </label>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-8">
-                    <select class="form-control">
-                        <option selected disabled>Tipo de Solicitação</option>
-                        <option>Casa</option>
-                        <option>Apartamento</option>
-                        <option>Mansão</option>
-                    </select>
-                </div>
-            </div>
-            <div class="help-block"></div>
-            <button type="submit" class="btn btn-primary">Salvar</button>
-        </form>
-    </section>
+    </div>
     <div class="help-block"></div>
-    <footer class="container">
+    <footer class="container" id="video">
         <address class="footer">
             <strong>Twitter, Inc.</strong>
             <br> 1355 Market Street, Suite 900
@@ -218,6 +242,7 @@
     </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/ng-animation-fix.js"></script>
 </body>
 
 </html>
